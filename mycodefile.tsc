@@ -4,6 +4,7 @@ import axios from 'axios';
 export const getUserData = createAsyncThunk('contactsApp/user/getUserData', async () => {
 	const response = await axios.get('/api/contacts-app/user');
 	const data = await response.data;
+	console.log("test");
 	return data;
 });
 
